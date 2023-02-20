@@ -42,7 +42,7 @@ main {
 }
 
 #banner {
-    background-color: #fff;
+    background-color: #66c2a5;
     padding: 50px;
     text-align: center;
 }
@@ -50,11 +50,13 @@ main {
 #banner h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #banner p {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .button {
@@ -76,7 +78,7 @@ main {
 }
 
 #about {
-    background-color: #f7f7f7;
+    background-color: #fc8d62;
     padding: 50px;
     text-align: center;
 }
@@ -84,15 +86,17 @@ main {
 #about h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #about p {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #courses {
-    background-color: #fff;
+    background-color: #8da0cb;
     padding: 50px;
     text-align: center;
 }
@@ -100,15 +104,17 @@ main {
 #courses h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #courses p {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #tutors {
-    background-color: #f7f7f7;
+    background-color: #e78ac3;
     padding: 50px;
     text-align: center;
 }
@@ -116,11 +122,13 @@ main {
 #tutors h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #tutors p {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 footer {
