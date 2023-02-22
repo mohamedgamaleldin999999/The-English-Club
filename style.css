@@ -33,7 +33,8 @@ nav {
   background-color: orange;
   color: #fff;
   padding: 0px;
-  z-index: 1; /* Set z-index to ensure nav is above other elements */
+  z-index: 1;
+  height: 30px; /* Set z-index to ensure nav is above other elements */
 }
 
 
