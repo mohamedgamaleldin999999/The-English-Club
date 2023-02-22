@@ -7,12 +7,13 @@ body {
 
 header {
     background-color: orange;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     
 }
 .logo-container {
@@ -22,8 +23,19 @@ header {
 
 }
 .logo-container:hover .logo {
-  transform: scale(1.2) ; /* Enlarge the logo by 20% */
+  transform: scale(1.7) ; /* Enlarge the logo by 20% */
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: orange;
+  color: #fff;
+  padding: 0px;
+  z-index: 1; /* Set z-index to ensure nav is above other elements */
+}
+
 
     .logo {
         width: 100%;
