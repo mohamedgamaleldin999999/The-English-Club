@@ -1,55 +1,135 @@
-/* courses page styles */
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+}
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
-  
-  .course-btn {
-    display: inline-block;
-    padding: 20px 50px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 50px;
-    background-color: #1c2237;
-    color: #fff;
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
-  }
-  
-  .course-btn:hover {
-    background-color: #fff;
-    color: #1c2237;
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  .fa {
-    margin-right: 10px;
-  }
-  
-  .course-btn .fa {
-    font-size: 30px;
-  }
-  
-  /* media queries */
-  
-  @media screen and (max-width: 767px) {
-    .course-btn {
-      padding: 15px 30px;
-      font-size: 20px;
-    }
-  
-    .course-btn .fa {
-      font-size: 24px;
-    }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
- 
+
+#our-courses {
+  text-align: center;
+}
+
+#online-courses {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Course categories section */
+.categories {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.category {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.category:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.category h3 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.category i {
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+/* Course details section */
+.details {
+  margin-bottom: 50px;
+}
+
+.details h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.details i {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+/* Course schedule section */
+.schedule {
+  margin-bottom: 50px;
+}
+
+.schedule h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.schedule ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.schedule i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Course instructors section */
+.instructors {
+  margin-bottom: 50px;
+}
+
+.instructors h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.instructor {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.instructor img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.instructor h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.instructor p {
+  font-size: 16px;
+  margin: 0;
+}
