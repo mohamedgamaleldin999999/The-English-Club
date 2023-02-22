@@ -22,12 +22,13 @@ header {
 
 }
 .logo-container:hover .logo {
-  transform: scale(1.2); /* Enlarge the logo by 20% */
+  transform: scale(1.2) ; /* Enlarge the logo by 20% */
 }
 
     .logo {
         width: 100%;
         height: 100%;
+        transition: transform 0.5s ease-in-out;
       }
 .h1 {
   font-size: 1.5em;
