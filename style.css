@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: orange;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     height: 50px; 
@@ -62,14 +62,20 @@ main {
 }
 
 #banner {
-    background-color: #66c2a5;
+    background-color: transparent;
     padding: 50px;
     text-align: center;
+    transition: background-color 0.5s ease-in-out
+    
+}
+#banner:hover{
+    background-color: green;
 }
 
 #banner h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin:0;
+    padding: 0 10px;
     color: #fff;
 }
 
