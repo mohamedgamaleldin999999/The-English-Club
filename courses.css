@@ -1,76 +1,106 @@
-/* Main container */
-.courses-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding :0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+header{
+  background-color: antiquewhite;
+  width:100%;
+  position: fixed;
+  z-index: 999;  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.navbar a{
+  color: blue;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-left: 30px;
 }
 
-/* Course item */
-.course-item {
-  width: calc(33.33% - 20px);
-  margin-bottom: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.course-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.course-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.course-item .course-content {
-  padding: 20px;
-}
-
-.course-item h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.course-item p {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #777;
-}
-
-.course-item .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
+/* Target the main heading */
+h1 {
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
-  color: #fff;
-  background-color: #007bff;
+  margin-top: 50px;
+}
+h1 .course-card{
+size: 30px;
+}
+
+/* Target the section headings */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* Target the course cards */
+.course-card {
+  background-color: violet;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Target the course card titles */
+.course-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Target the course card descriptions */
+.course-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+.course-card:hover{
+  font-size: larger;
+  background-color: aqua;
+}
+
+/* Target the course card buttons */
+.course-card button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
 }
 
-.course-item .btn:hover {
-  background-color: #0069d9;
+/* Target the course card button hover state */
+.course-card button:hover {
+  background-color: #3e8e41;
 }
 
-/* Responsive design */
-@media only screen and (max-width: 991px) {
-  .course-item {
-    width: calc(50% - 20px);
-  }
+/* Target the footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-@media only screen and (max-width: 767px) {
-  .course-item {
-    width: 100%;
-  }
+/* Target the footer links */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Target the footer link hover state */
+footer a:hover {
+  text-decoration: underline;
 }
