@@ -123,9 +123,14 @@ main {
 
 
 #about {
-    background-color: #fc8d62;
+    background-color: transparent;
     padding: 50px;
     text-align: center;
+    transition: background-color 0.5s ease-in-out
+}
+
+#about:hover {
+    background-color: goldenrod;
 }
 
 #about h2 {
@@ -141,11 +146,14 @@ main {
 }
 
 #courses {
-    background-color: #8da0cb;
+    background-color:transparent;
     padding: 50px;
     text-align: center;
+    transition: background-color 0.5s ease-in-out
 }
-
+#courses:hover{
+  background-color: blue;
+}
 #courses h2 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -159,9 +167,14 @@ main {
 }
 
 #tutors {
-    background-color: #e78ac3;
+    background-color: transparent;
     padding: 50px;
     text-align: center;
+    transition: background-color 0.5s ease-in-out
+}
+#tutors:hover{
+  background-color: darkblue;
+  transition: background-color 0.5s ease-in-out
 }
 
 #tutors h2 {
