@@ -5,102 +5,295 @@
     padding :0;
 box-sizing: border-box;
 scroll-behavior: smooth;
+
 }
 header{
-  background-color: antiquewhite;
-  width:100%;
-  position: fixed;
-  z-index: 999;  display: flex;
- justify-content: space-between;
+    background-color: goldenrod;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 200px;
+    height: 100px;
+
+
+}
+.logo{
+    text-decoration: none;
+    color:blue;
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: 1.9em;
+}
+.logo-image {
+  /* This is a comment in CSS */
+
+/* Select the logo element and apply these styles */
+
+  max-width: 100px;
+  height: 50px;
+  display:flex;
   align-items: center;
-  padding: 10px 200px;
+  margin:  auto;
+  vertical-align: middle;
+  margin-right: 100px;
+justify-content: flex-start;
+
+
 }
-.navbar a{
+.logo-image:hover{
+  
+  transform: scale(2.0);
+    transition: 0.9s ease;
+
+}
+
+
+.navigation a{
+    color: blue;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: crimson;
+    
+}
+section{
+    padding:100px 200px;
+
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items:left center;
+    background: url(images/Entrance.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-position: top;
+    background-attachment: fixed;
+
+
+}
+.main h2{
+    color: antiquewhite;
+    font-size: 1.0em;
+    font-weight: 500;
+
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: aqua;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: antiquewhite;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: rgb(195, 123, 28);
+    background-color: aqua ;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color:rgb(60, 0, 255);
+    transform: scale(1.1);
+
+}
+.social-icons a {
+    color: antiquewhite;
+    font-size: 50px;
+    padding-right: 30px;
+}
+.fa-brands{
+    color: antiquewhite;
+    font-size: 30px;
+    padding-right: 30px;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+  display: inline-block;
+    background-color: greenyellow;
+    width: 30%;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px;
+    padding:15px ;
+    margin: 10px;
+}
+
+.card:hover{
+    
+    transform: scale(1.1);
+    transition: 0.7s ease;
+
+}
+  .icon{
+    color: red;
+    font-size: 8em;
+    text-align: center;
+
+  }
+  .info{
+    text-align: center;
+    
+  }
+  .info h3{
+    color: blue;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin: 10px;
+
+
+  }
+  .Pcc{
+    background-color: brown;
+
+  }
+  .projects .content{
+    margin-top: 30px;
+
+  }
+  .project-card{
+    background-color: antiquewhite;
+    border:5px solid antiquewhite;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+  }
+  .project-card:hover{
+    transform: scale(1.1);
+  }
+  .project-card:hover .project-image{
+    opacity: 0.9;
+    ;
+  }
+  .project-image img{
+    width: 100%;
+
+  }
+  .project-info{
+
+    padding: 1em;
+
+  }
+  .project-category{
+    font-size: 0.8em;
+    color: black;
+
+  }
+  .project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase; 
+    font-weight: 800;
+    margin-top: 10px;
+
+ }
+ .more-details{
+    text-decoration: none;
+    color: blue;
+
+ }
+ .more-dtails:hover{
+    color: blue;
+    
+ }
+ .more-details:hover{
   color: blue;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 500;
-  padding-left: 30px;
-}
+ }
+  .contact .icon{
+    font-size: 4.5em;
 
-/* Target the main heading */
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-}
-h1 .course-card{
-size: 30px;
-}
 
-/* Target the section headings */
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 30px;
-}
+  }
+  .contact .info h3{
+    color: black;
 
-/* Target the course cards */
-.course-card {
-  background-color: violet;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  margin-bottom: 30px;
-}
+  }
+  .contact .info p{
+    font-size: 1.5em;
 
-/* Target the course card titles */
-.course-card h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+  }
+  .footer{
+    background-color: black;
+    color: antiquewhite;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
 
-/* Target the course card descriptions */
-.course-card p {
-  font-size: 16px;
-  margin-bottom: 10px;
-
-}
-.course-card:hover{
-  font-size: larger;
-  background-color: aqua;
-}
-
-/* Target the course card buttons */
-.course-card button {
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 10px;
-}
-
-/* Target the course card button hover state */
-.course-card button:hover {
-  background-color: #3e8e41;
-}
-
-/* Target the footer */
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-/* Target the footer links */
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Target the footer link hover state */
-footer a:hover {
-  text-decoration: underline;
-}
+  }
+  .footer-title .span{
+    color: aqua;
+  }
+  .footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    
+  }
+  @media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    .header {
+      height: 100px;
+      padding: 20px;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .nav-item {
+      margin: 10px 0;
+    }
+    .cta {
+      margin-top: 20px;
+    }
+    .main {
+      padding: 20px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  
