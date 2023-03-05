@@ -114,7 +114,17 @@ main {
     font-size: 18px;
     transition: all 0.3s;
 }
+.social-icons a {
+  color: antiquewhite;
+  font-size: 50px;
+  padding-right: 30px;
+}
+.fa-brands{
+  color: antiquewhite;
+  font-size: 30px;
+  padding-right: 30px;
 
+}
 .button:hover {
     background-color: #fff;
     color: #000;
@@ -206,8 +216,17 @@ main {
 .footer .social-icons a{
   font-size: 1.3em;
   padding: 0 12px 0 0;
+
   
 }
+.fa-brands{
+  color: antiquewhite;
+  font-size: 30px;
+  padding-right: 30px;
+
+}
+
+
 @media screen and (max-width: 768px) {
   /* Styles for smaller screens */
   .header {

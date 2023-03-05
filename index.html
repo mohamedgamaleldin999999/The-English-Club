@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>The English Club</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 </head>
 <body>
 	<header>
@@ -16,7 +20,9 @@
 				<li><a href="./index.html#">Home</a></li>
 				<li><a href="./courses.html"  target="_blank">Courses</a></li>
 				<li><a href="tutors.html" target="_blank">Tutors</a></li>
-				<li><a href="courses.html" target="_blank">Contact Us</a></li>
+				<button onclick="scrollToFooter()">Contact Us</button>
+
+
 			</ul>
 		</nav>
 	</header>
@@ -24,6 +30,8 @@
 	<main>
 		<section id="banner">
 			<h2>Welcome to The English Club</h2>
+			<div class="social-icons"></div>
+<a href="https://www.facebook.com/TheEnglishClubAlex/"><i class="fa-brands fa-facebook"></i></a>
 			<p>Improve your English language skills with our courses and experienced tutors.</p>
 			<a href="courses.html" target="_blank" class="button">View Courses</a>
 		</section>
@@ -37,6 +45,7 @@
 		<section id="courses">
 			<h2>Our Courses</h2>
 			<p>We offer a variety of courses to suit your needs, including General English, Business English, Exam Preparation, and more. Whether you're a beginner or an advanced learner, we have the right course for you.</p>
+		
 			<a href="courses.html" target="_blank" class="button">View Courses</a>
 		</section>
 
@@ -45,16 +54,25 @@
 			<p>Our tutors are experienced, qualified, and passionate about teaching English. They use their expertise and creativity to help students achieve their language goals.</p>
 			<a href="tutors.html" target="_blank" class="button">Learn More</a>
 		</section>
-		<div class="social-icons"></div>
+		
 
 	</main>
 
-	<footer class="footer">
+	<footer class="footer" id="contact">
+		
+
         <p class="footer-title">copyrights@<span>the TheEnglishClubAlex</span></p>
         <div class="social-icons"></div>
-        <a href="https://www.facebook.com/TheEnglishClubAlex/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        </a>
+<a href="https://www.facebook.com/TheEnglishClubAlex/"><i class="fa-brands fa-facebook"></i></a>
+        
             </div>
     </footer>
 </body>
 </html>
+<script>
+	function scrollToFooter() {
+	  const footer = document.querySelector('#contact');
+	  footer.scrollIntoView({ behavior: 'smooth' });
+	}
+  </script>
+  
