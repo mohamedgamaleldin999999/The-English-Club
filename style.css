@@ -1,8 +1,10 @@
 body {
-    background: url(images/outside1.jpg) no-repeat;
+    background: url(https://theenglishclub.s3.us-west-2.amazonaws.com/outside1.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    color:black;
+    font-weight:600;
 }
 
 header {
@@ -25,6 +27,8 @@ header {
 .logo-container:hover .logo {
   transform: scale(1.7) ; /* Enlarge the logo by 20% */
 }
+
+
 nav {
   position: fixed;
   top: 0;
@@ -77,15 +81,21 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    font-weight:900;
+  
 }
 
 #banner {
     background-color: transparent;
     padding: 50px;
     text-align: center;
-    transition: background-color 0.5s ease-in-out
+    transition: background-color 0.5s ease-in-out;
+    
+   
     
 }
+
+
 #banner:hover{
     background-color: green;
 }
@@ -95,6 +105,7 @@ main {
     margin:0;
     padding: 0 10px;
     color: #fff;
+    font-weight: 600;
 }
 
 #banner p {
