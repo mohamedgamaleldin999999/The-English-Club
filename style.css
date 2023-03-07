@@ -83,7 +83,7 @@ main {
     background-color: transparent;
     padding: 50px;
     text-align: center;
-    transition: background-color 0.5s ease-in-out
+    transition: background-color 0.5s ease-in-out;
     
 }
 #banner:hover{
