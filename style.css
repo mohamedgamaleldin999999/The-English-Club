@@ -1,17 +1,29 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Gulzar&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Prism&display=swap');
 body {
+
+ 
+  
+  
+  
+font-family: 'Tilt Prism',sans-serif;
     background: url(https://theenglishclub.s3.us-west-2.amazonaws.com/outside1.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color:black;
-    font-weight:600;
+    font-weight:800;
+    font-size:  20px; 
 }
 
 header {
     background-color: orange;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 50px; 
+    height:50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +50,7 @@ nav {
   color: #fff;
   padding: 0px;
   z-index: 1;
-  height: 30px; /* Set z-index to ensure nav is above other elements */
+  height: 40px; /* Set z-index to ensure nav is above other elements */
 }
 
 
@@ -47,6 +59,10 @@ nav {
         height: 100%;
         transition: transform 0.5s ease-in-out;
       }
+    
+
+
+
 .h1 {
   font-size: 1.5em;
   margin: 10;
@@ -90,8 +106,9 @@ main {
     padding: 50px;
     text-align: center;
     transition: background-color 0.5s ease-in-out;
-    
    
+   
+    
     
 }
 
@@ -102,10 +119,11 @@ main {
 
 #banner h2 {
     font-size: 1.2em;
-    margin:0;
+    margin-top:200px;
     padding: 0 10px;
     color: #fff;
     font-weight: 600;
+
 }
 
 #banner p {
@@ -115,29 +133,38 @@ main {
 }
 
 .button {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s;
+  display: inline-block !important;
+  background-color: #741414 !important;
+  color: #baba15 !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  transition: all 0.3s !important;
 }
+
 .social-icons a {
   color: antiquewhite;
   font-size: 50px;
   padding-right: 30px;
+
 }
+.social-icons a:hover {
+  color: blue; /* set hover color here */
+}
+
 .fa-brands{
   color: antiquewhite;
   font-size: 30px;
   padding-right: 30px;
 
 }
+.fa-brands:hover{
+  color: blue;
+}
 .button:hover {
-    background-color: #fff;
+    background-color: brown;
     color: #000;
     border: 2px solid #000;
 }
@@ -187,6 +214,7 @@ main {
     color: #fff;
 }
 
+
 #tutors {
     background-color: transparent;
     padding: 50px;
@@ -195,7 +223,7 @@ main {
 }
 #tutors:hover{
   background-color: darkblue;
-  transition: background-color 0.5s ease-in-out
+  transition:  0.5s ease-in-out
 }
 
 #tutors h2 {
@@ -237,11 +265,15 @@ main {
 
 }
 
+ 
+
 
 @media screen and (max-width: 768px) {
   /* Styles for smaller screens */
+  .body {
+    font-family: 'Tilt Prism';}
   .header {
-    height: 100px;
+    height: 200px;
     padding: 20px;
   }
   .nav {
@@ -253,12 +285,17 @@ main {
     margin: 10px 0;
   }
   .cta {
-    margin-top: 20px;
+    margin-top: 70px;
   }
   .main {
     padding: 20px;
   }
   .card {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .body {
+    font-family: 'Tilt Prism';
   }
 }
